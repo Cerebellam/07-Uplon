@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+.page{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    width: 100%;
+}
+.sideMenu{
+    display: flex;
+    position: fixed;
+    width: 25%;
+}
+.header{
+    display: flex;
+    position: fixed;
+    width: 75%;
+}
+.hamburger .leftHeader{
+    justify-content: flex-start;
+}
+.hamburger .rightHeader{
+    justify-content: flex-end;
+}
