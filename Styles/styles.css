@@ -6,33 +6,26 @@ body{
 .page{
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
 }
-.page .pageContent{
+.page .topBar{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.page .pageContent .sideMenu{
-    display: flex;
-    flex-wrap: wrap;
+.page .topBar .logo{
     width: 20%;
-    overflow: scroll;
-}
-.page .pageContent .sideMenu .logo{
-    width: 100%;
     padding: 20px 0;
     margin-top: 10px;
     text-align: center;
 }
-.page .pageContent .sideMenu .logo .logoIcon{
+.page .topBar .logo .logoIcon{
     display: inline-block;
     vertical-align: middle;
 }
-.page .pageContent .sideMenu .logo .logoIcon img{
+.page .topBar .logo .logoIcon img{
     width: 16px;
 }
-.page .pageContent .sideMenu .logoName{
+.page .topBar .logo .logoName{
     display: inline-block;
     font-size: 20px;
     font-weight: 700;
@@ -40,7 +33,43 @@ body{
     margin-left: 3px;
     vertical-align: middle;
 }
-.page .pageContent .sideMenu .menuTitle{
+.page .topBar .header{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    background: #2d3d4f;
+}
+.page .topBar .header .leftHeader{
+    justify-content: flex-start;
+    width: 50%;
+    padding: 25px 0;
+}
+.page .topBar .header .rightHeader{
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    padding: 15px 0;
+}
+.page .topBar .header .rightHeader .icon{
+    padding: 15px 20px;
+}
+.page .topBar .header .rightHeader .icon img{
+    height: 15px;
+}
+.page .topBar .header .rightHeader .account{
+    padding:5px 20px;
+}
+.page .topBar .header .rightHeader .account img{
+    border-radius: 20px;
+    width: 35px;
+}
+.page .topBar .sideMenu{
+    display: flex;
+    flex-wrap: wrap;
+    width: 20%;
+    overflow: scroll;
+}
+.page .topBar .sideMenu .menuTitle{
     width: 100%;
     color: #868e96;
     font-size: 13px;
@@ -48,12 +77,12 @@ body{
     letter-spacing: 1px;
     padding: 15px 30px;
 }
-.page .pageContent .sideMenu .menuTabs{
+.page .topBar .sideMenu .menuTabs{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 }
-.page .pageContent .sideMenu .menuTabs .menuTab{
+.page .topBar .sideMenu .menuTabs .menuTab{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -65,30 +94,30 @@ body{
     cursor: default;
     opacity: 0.8;
 }
-.page .pageContent .sideMenu .menuTabs .menuTab .menuTabIcon{
+.page .topBar .sideMenu .menuTabs .menuTab .menuTabIcon{
     padding-left:30px;
     text-align: center;
     width: calc(15% - 30px);
 
 }
-.page .pageContent .sideMenu .menuTabs .menuTab .menuTabTitle{
+.page .topBar .sideMenu .menuTabs .menuTab .menuTabTitle{
     width: calc(85% - 30px);
     padding-left: 30px;
     color: rgba(43, 61, 81, 1);
 }
-.page .pageContent .sideMenu .menuTabs .menuTab:hover{
+.page .topBar .sideMenu .menuTabs .menuTab:hover{
     opacity: 1;
     transition: opacity .5s;
 }
-.page .pageContent .sideMenu .menuTabs .menuTab.Selected{
+.page .topBar .sideMenu .menuTabs .menuTab.Selected{
     background: #64b0f2;
     opacity: 1;
 }
-.page .pageContent .sideMenu .menuTabs .menuTab.Selected .menuTabTitle{
+.page .topBar .sideMenu .menuTabs .menuTab.Selected .menuTabTitle{
     color: white;
     letter-spacing: 0.05em;
 }
-.page .pageContent .sideMenu .menuTabs .menuTab:after{
+.page .topBar .sideMenu .menuTabs .menuTab:after{
     content: url('..//icons/arrowRight.svg');
     position: absolute;
     left: 18%;
@@ -99,15 +128,4 @@ body{
     flex-wrap: wrap;
     width: 80%;
     background: #f5f5f5;
-}
-.page .content .header{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-.page .content .header .leftHeader{
-    justify-content: flex-start;
-}
-.page .content .header .rightHeader{
-    justify-content: flex-end;
 }
