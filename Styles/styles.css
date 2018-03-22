@@ -8,23 +8,29 @@ body{
     flex-wrap: wrap;
     width: 100%;
 }
-.menu{
+.page .pageContent{
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
-.sideMenu{
+.page .pageContent .sideMenu{
     display: flex;
-    position: fixed;
+    flex-wrap: nowrap;
     width: 25%;
 }
-.header{
+.page .content{
     display: flex;
-    position: fixed;
+    flex-wrap: wrap;
     width: 75%;
 }
-.hamburger .leftHeader{
+.page .content .header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.page .content .header .leftHeader{
     justify-content: flex-start;
 }
-.hamburger .rightHeader{
+.page .content .header .rightHeader{
     justify-content: flex-end;
 }
