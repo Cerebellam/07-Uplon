@@ -315,6 +315,29 @@ body{
     font-weight: 400;
     color: #818a91;
 }
+.page .content .mainContent .salesChart{
+    width: calc(65% - 40px);
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    margin: 0 20px;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+}
+.page .content .mainContent .salesChart .chartKeys{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.page .content .mainContent .trends{
+    width: calc(35% - 20px);
+    display: flex;
+    flex-wrap: wrap;
+    background: white;
+    margin-right: 20px;
+}
 .footer{
     width: 100%;
     color: #818a91;
