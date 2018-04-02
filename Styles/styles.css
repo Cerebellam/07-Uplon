@@ -11,8 +11,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    position: fixed;
-    z-index: 999;
+    z-index: 5;
 }
 .page .topBar .logo{
     width: 20%;
@@ -124,12 +123,13 @@ body{
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 1px;
-    padding: 15px 30px;
+    padding: 0 30px;
 }
 .page .topBar .sideMenu .menuTabs{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    margin-top: -65px;
 }
 .page .topBar .sideMenu .menuTabs .menuTab{
     display: flex;
@@ -171,6 +171,48 @@ body{
     position: absolute;
     left: 18%;
     vertical-align: middle;
+}
+.page .topBar .sideMenu .menuTabs .menuTab.Selected:after{
+    content: "1";
+    position: absolute;
+    left: 17%;
+    vertical-align: middle;
+    font-size: 11px;
+    color:white;
+    background: #039cfd;
+    width: 20px;
+    height: 16px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 4px;
+}
+.page .topBar .sideMenu .menuTabs .menuTab.Forms:after{
+    content: "8";
+    position: absolute;
+    left: 17%;
+    vertical-align: middle;
+    font-size: 11px;
+    color:white;
+    background: #f1b53d;
+    width: 20px;
+    height: 16px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 4px;
+}
+.page .topBar .sideMenu .menuTabs .menuTab.Pages:after{
+    content: "13";
+    position: absolute;
+    left: 17%;
+    vertical-align: middle;
+    font-size: 11px;
+    color:white;
+    background: #1bb99a;
+    width: 25px;
+    height: 16px;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 4px;
 }
 .page .topBar .content{
     display: flex;
@@ -233,7 +275,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    margin-top: -130px;
+    margin: 20px 0 0 0;
 }
 .page .content .mainContent .summary .summaryTabs{
     width: calc(25% - 25px);
@@ -316,31 +358,334 @@ body{
     color: #818a91;
 }
 .page .content .mainContent .salesChart{
-    width: calc(65% - 40px);
+    width: calc(68% - 40px);
     display: flex;
     flex-wrap: wrap;
     background: white;
-    margin: 0 20px;
+    margin: 20px 20px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
     border-radius: 10px;
+
 }
-.page .content .mainContent .salesChart .chartKeys{
+.page .content .mainContent .title{
+    width: 100%;
+    padding: 20px;
+    letter-spacing: 0.05em;
+    font-weight: 500;
+}
+.page .content .mainContent .chartKeys{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0;
+}
+.page .content .mainContent .chartKeys .key{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.page .content .mainContent .chartKeys .circle{
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    border: 0.09em solid #3db9dc;
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.page .content .mainContent .chartKeys .key .keyTitle{
+    font-size: 16px;
+    margin-right: 15px;
+    letter-spacing: 0.05em;
+}
+.page .content .mainContent .chartKeys .key.Blue .keyTitle{
+    color: #3db9dc;
+}
+.page .content .mainContent .chartKeys .key.Green .keyTitle{
+    color: #1bb99a;
+}
+.page .content .mainContent .chartKeys .key.Gray .keyTitle{
+    color: #818a91;
+}
+.page .content .mainContent .chartKeys .triangle{
+    margin-top: 2px;
+    margin-right: 5px;
+}
+.page .content .mainContent .chartKeys .triangle img{
+    width: 15px;
+}
+.page .content .mainContent .chartKeys .square{
+    width: 10px;
+    height: 10px;
+    border: 0.09em solid #818a91;
+    border-radius: 2px;
+    margin-top: 2px;
+    margin-right: 6px;
+}
+.page .content .mainContent .salesChart .chart{
+    width: calc(100% - 80px);
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 12px;
+    color: #818a91;
+    justify-content: center;
+    padding: 0 0 30px 0;
+    align-items: flex-end;
+    margin:30px 60px 0 20px ;
+
+}
+.page .content .mainContent .salesChart .chart .yaxis{
+    display: flex;
+    flex-direction: column;
+    width: 8.3%;
+    padding-bottom: 32px;
 }
 
+.page .content .mainContent .salesChart .chart .yaxis .number{
+    padding-top: 50px;
+    text-align: center;
+}
+.page .content .mainContent .salesChart .chart .yaxis .number:first-child{
+    padding-top: 0;
+}
+
+.page .content .mainContent .salesChart .chart .bars{
+    display: flex;
+    flex-direction: column;
+    width: 8.3%;
+    align-items: flex-end;
+
+}
+
+.page .content .mainContent .salesChart .chart .bars.A .gray{
+    width: 20px;
+    height: 65px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.A .green{
+    width: 20px;
+    height: 120px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.A .blue{
+    width: 20px;
+    height: 30px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.B .gray{
+    width: 20px;
+    height: 50px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.B .green{
+    width: 20px;
+    height: 40px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.B .blue{
+    width: 20px;
+    height: 50px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.C .gray{
+    width: 20px;
+    height: 35px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.C .green{
+    width: 20px;
+    height: 60px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.C .blue{
+    width: 20px;
+    height: 60px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.D .gray{
+    width: 20px;
+    height: 50px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.D .green{
+    width: 20px;
+    height: 40px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.D .blue{
+    width: 20px;
+    height: 50px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.E .gray{
+    width: 18px;
+    height: 60px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.E .green{
+    width: 18px;
+    height: 100px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.E .blue{
+    width: 18px;
+    height: 25px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.F .gray{
+    width: 18px;
+    height: 60px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.F .green{
+    width: 18px;
+    height: 100px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.F .blue{
+    width: 18px;
+    height: 25px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.G .gray{
+    width: 18px;
+    height: 60px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.G .green{
+    width: 18px;
+    height: 100px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.G .blue{
+    width: 18px;
+    height: 25px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.H .gray{
+    width: 18px;
+    height: 60px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.H .green{
+    width: 18px;
+    height: 100px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.H .blue{
+    width: 18px;
+    height: 25px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.J .gray{
+    width: 18px;
+    height: 60px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.J .green{
+    width: 18px;
+    height: 100px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.J .blue{
+    width: 18px;
+    height: 25px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.K .gray{
+    width: 18px;
+    height: 60px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.K .green{
+    width: 18px;
+    height: 100px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.K .blue{
+    width: 18px;
+    height: 25px;
+    background: rgb(61, 185, 220);
+}
+
+.page .content .mainContent .salesChart .chart .bars.L .gray{
+    width: 18px;
+    height: 60px;
+    background: rgb(235, 239, 242);
+}
+.page .content .mainContent .salesChart .chart .bars.L .green{
+    width: 18px;
+    height: 100px;
+    background: rgb(27, 185, 154);
+}
+.page .content .mainContent .salesChart .chart .bars.L .blue{
+    width: 18px;
+    height: 25px;
+    background: rgb(61, 185, 220);
+}
+.page .content .mainContent .salesChart .chart .bars .xaxisNumber{
+    font-size: 11px;
+    height: 20px;
+    padding-top: 15px;
+    text-align: center;
+}
 
 
 .page .content .mainContent .trends{
-    width: calc(35% - 20px);
+    width: calc(32% - 20px);
     display: flex;
     flex-wrap: wrap;
     background: white;
-    margin-right: 20px;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
     border-radius: 10px;
+    margin: 20px 20px 20px 0;
 }
+.page .content .mainContent .trends .trendsOptions{
+    text-align: center;
+    margin:0 auto;
+    padding-bottom: 20px;
+    border-radius: 5px;
+}
+.page .content .mainContent .trends .trendsOptions button{
+    text-align: center;
+    background: #6f777f;
+    opacity: 0.8;
+    margin-left: -4px;
+    border: none;
+    font-size: 14px;
+    color: white;
+    padding: 10px;
+}
+.page .content .mainContent .trends .trendsOptions button:first-child{
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+.page .content .mainContent .trends .trendsOptions button:last-child{
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.page .content .mainContent .trends .trendsOptions button:hover{
+    opacity:1;
+    transition: opacity .6s;
+}
+.page .content .mainContent .trends .chart{
+    margin: 0px auto;
+}
+.page .content .mainContent .trends .chartKeys{
+    padding-left: 10px;
+    margin: 20px 0 30px 0;
+}
+
+
 .footer{
     width: 100%;
     color: #818a91;
