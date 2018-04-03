@@ -746,6 +746,57 @@ body{
 }
 
 
+.sales{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 28%;
+}
+.sales .salesStats{
+    margin-bottom: 20px;
+    background: white;
+    box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+
+}
+.sales .salesStats .title{
+    width: 100%;
+}
+.sales .salesStats .info{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+    padding: 0 20px;
+    width: calc(100% - 40px);
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+.sales .salesStats .info .device{
+    width: 50%;
+}
+.sales .salesStats .info .percentage{
+    font-weight: 600;
+    text-align: right;
+    width: 50%;
+}
+.sales .salesStats .info .percentage.Pink{
+    color: #ff5d48;
+}
+.sales .salesStats .info .percentage.Green{
+    color: #1bb99a;
+}
+.sales .salesStats .info .percentage.Yellow{
+    color: #f1b53d;
+}
+
+.sales .salesStats .graph{
+    font-size: 14px;
+    font-weight: 600;
+    text-align: right;
+    width: calc(100% - 40px);
+    padding: 5px 20px;
+}
+
 
 
 .footer{
