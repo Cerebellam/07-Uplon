@@ -945,5 +945,11 @@ body{
 
 
 @media (max-width: 1199px) {
-    
+    .page .content .mainContent .summary .summaryTabs{
+        width: calc(50% - 25px);
+    }
+    .page .content .mainContent .summary .summaryTabs:first-child{
+        margin-bottom: 20px;
+    }
+
 }
