@@ -200,6 +200,7 @@ body{
     font-weight: 400;
     letter-spacing: 1px;
     padding: 0 30px;
+    height: 20px;
 }
 .page .topBar .sideMenu .menuTabs{
     display: flex;
@@ -953,16 +954,16 @@ body{
         margin-bottom: 20px;
     }
     .page .content .mainContent .summary .summaryTabs.Order{
-        background-position: 340px 20px;
+        background-position: 380px 20px;
     }
     .page .content .mainContent .summary .summaryTabs.Pay{
-        background-position: 340px 20px;
+        background-position: 380px 20px;
     }
     .page .content .mainContent .summary .summaryTabs.Price{
-        background-position: 340px 20px;
+        background-position: 380px 20px;
     }
     .page .content .mainContent .summary .summaryTabs.Product{
-        background-position: 340px 22px;
+        background-position: 380px 22px;
     }
     .page .content .mainContent .salesChart{
         width: calc(100% - 40px);
