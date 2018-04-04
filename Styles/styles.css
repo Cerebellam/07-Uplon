@@ -692,14 +692,13 @@ body{
 }
 
 .inbox{
-    width: calc(28% - 20px);
+    width: calc(28% - 40px);
     display: flex;
     flex-wrap: wrap;
     background: white;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
     border-radius: 8px;
     margin: 0 20px 20px 20px;
-    height: 370px;
     overflow: scroll;
 }
 .inbox .messages{
@@ -753,11 +752,11 @@ body{
 }
 .sales .salesStats{
     margin-bottom: 20px;
-    padding-right: 20px;
     background: white;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
     border-radius: 8px;
     width: calc(100% - 20px);
+    margin-right: 20px;
 }
 .sales .salesStats .title{
     width: 100%;
@@ -796,18 +795,19 @@ body{
     width: calc(100% - 40px);
     padding: 5px 20px;
 }
+.sales .salesStats .graph img{
+    width: 100%;
+}
 .topContracts{
     width: calc(44% - 20px);
-    padding-right: 20px;
-    margin-bottom: 20px;
+    margin:0 20px 20px 0;
     background: white;
     box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
     border-radius: 8px;
 }
 .topContracts table{
     width: calc(100% - 45px);
-    padding: 0 20px;
-    margin: 20px auto;
+    margin:10px 20px;
     border-collapse: collapse;
     font-size: 14px;
     text-align: center;
