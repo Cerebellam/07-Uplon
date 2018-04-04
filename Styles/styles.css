@@ -807,7 +807,7 @@ body{
 }
 .topContracts table{
     width: calc(100% - 45px);
-    margin:10px 20px;
+    margin: 20px;
     border-collapse: collapse;
     font-size: 14px;
     text-align: center;
@@ -818,9 +818,10 @@ body{
 }
 .topContracts table tr td{
     border: 1px solid #e9ecef;
-    padding: 10px;
+    padding: 15px 10px;
     margin: 0;
     vertical-align: middle;
+    letter-spacing: 0.03em;
 
 }
 .topContracts table tr td h4{
@@ -835,7 +836,26 @@ body{
 .topContracts .chartTitle{
     font-size: 15px;
     font-weight: 600;
-
+}
+.topContracts tr td .paid{
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    background: #1bb99a;
+    height: 12px;
+    padding: 4px 0;
+    color: white;
+    border-radius: 2px;
+}
+.topContracts tr td .unpaid{
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: 0.03em;
+    background: #ff5d48;
+    height: 12px;
+    padding: 4px 0;
+    color: white;
+    border-radius: 2px;
 }
 
 
