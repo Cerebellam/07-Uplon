@@ -99,6 +99,82 @@ body{
 .page .topBar .header .rightHeader .icon.Mail img{
     width: 19px;
 }
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown{
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 135px;
+    top: 75px;
+    border: 1px solid #e9ecef;
+    border-radius: 5px;
+    background: white;
+    width: 290px;
+    box-shadow: 0 0px 24px 0 rgba(43, 61, 81, 0.06), 0 1px 0px 0 rgba(43, 61, 81, 0.02)
+}
+.page .topBar .header .rightHeader .icon.Mail:hover .mailDropdown{
+    display: block;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .mailHeader{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background: #1bb99a;
+    padding: 15px;
+    color: white;
+    letter-spacing: 0.03em;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .mailHeader .messageTitle{
+    padding-top: 1px;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .mailHeader .messageAmount{
+    background: #ff5d48;
+    width: 9px;
+    font-size: 14px;
+    padding: 3px 8px;
+    border-radius: 2px;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .message{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .photo{
+    width: calc(30% - 40px);
+    margin: 10px 10px 0 20px;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .photo img{
+    width: 40px;
+    border-radius: 20px;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .text{
+    width: 70%;
+    padding: 5px 0;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .text .name{
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .text .info{
+    font-size: 13px;
+    letter-spacing: 0.03em;
+    padding: 2px 0;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .text .time{
+    font-size: 11px;
+    color: #818a91;
+    letter-spacing: 0.03em;
+    padding: 2px 0;
+}
+.page .topBar .header .rightHeader .icon.Mail .mailDropdown .mailFooter{
+    background: #e9ecef;
+    font-size: 14px;
+    color: #6f777f;
+    letter-spacing: 0.03em;
+    padding: 15px;
+}
 .page .topBar .header .rightHeader .icon.Activity{
     margin-top: 4px;
 }
