@@ -953,6 +953,17 @@ body{
     .page .content .mainContent .summary .summaryTabs:first-child{
         margin-bottom: 20px;
     }
-
+    .page .content .mainContent .summary .summaryTabs.Order{
+        background-position: 340px 20px;
+    }
+    .page .content .mainContent .summary .summaryTabs.Pay{
+        background-position: 340px 20px;
+    }
+    .page .content .mainContent .summary .summaryTabs.Price{
+        background-position: 340px 20px;
+    }
+    .page .content .mainContent .summary .summaryTabs.Product{
+        background-position: 340px 22px;
+    }
 
 }
