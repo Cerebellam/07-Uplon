@@ -91,7 +91,7 @@ body{
     width: 50%;
 }
 .page .topBar .header .rightHeader .icon{
-    padding: 16px 15px;
+    padding: 18px 15px;
 }
 .page .topBar .header .rightHeader .icon img{
     width: 15px;
@@ -133,7 +133,7 @@ body{
     width: 9px;
     font-size: 14px;
     padding: 3px 8px;
-    border-radius: 2px;
+    border-radius: 4px;
 }
 .page .topBar .header .rightHeader .icon.Mail .mailDropdown .message{
     display: flex;
@@ -230,10 +230,7 @@ body{
     padding-left: 30px;
     color: rgba(43, 61, 81, 1);
 }
-.page .topBar .sideMenu .menuTabs .menuTab:hover{
-    opacity: 1;
-    transition: opacity .5s;
-}
+
 .page .topBar .sideMenu .menuTabs .menuTab.Selected{
     background: #64b0f2;
     opacity: 1;
@@ -247,6 +244,10 @@ body{
     position: absolute;
     left: 18%;
     vertical-align: middle;
+}
+.page .topBar .sideMenu .menuTabs .menuTab:hover{
+    opacity: 1;
+    transition: opacity .5s;
 }
 .page .topBar .sideMenu .menuTabs .menuTab.Selected:after{
     content: "1";
@@ -933,8 +934,6 @@ body{
     color: white;
     border-radius: 2px;
 }
-
-
 .footer{
     width: 100%;
     color: #818a91;
@@ -943,3 +942,5 @@ body{
     padding: 19px 30px 20px;
     letter-spacing: 0.03em;
 }
+
+
