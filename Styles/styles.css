@@ -900,7 +900,6 @@ body{
     margin: 0;
     vertical-align: middle;
     letter-spacing: 0.03em;
-
 }
 .topContracts table tr td h4{
     margin: auto auto;
@@ -972,5 +971,42 @@ body{
         width: calc(100% - 40px);
         margin: 0 20px 20px 20px;
     }
+    .inbox{
+        width: calc(50% - 40px);
+        display: flex;
+        flex-wrap: wrap;
+        background: white;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+        border-radius: 8px;
+        margin: 0 20px 20px 20px;
+        overflow: scroll;
+    }
+    .sales{
+        width: 50%;
+    }
+    .sales .salesStats .info{
+        margin: 10px 0 10px 0;
+    }
+    .topContracts{
+        width: calc(100% - 40px);
+        margin:0 20px 20px 20px;
+        background: white;
+        box-shadow: 0 0 24px 0 rgba(0, 0, 0, 0.06), 0 1px 0 0 rgba(0, 0, 0, 0.02);
+        border-radius: 8px;
+    }
 
+    .topContracts table tr td h4{
+        text-align: center;
+    }
+    .topContracts table tr td{
+        width: 20%;
+    }
+    .topContracts tr td .paid{
+        width: 50px;
+        margin: 0 auto;
+    }
+    .topContracts tr td .unpaid{
+        width: 50px;
+        margin: 0 auto;
+    }
 }
