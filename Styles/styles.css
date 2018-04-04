@@ -883,7 +883,7 @@ body{
 }
 .topContracts table{
     width: calc(100% - 45px);
-    margin: 20px;
+    margin: 20px auto;
     border-collapse: collapse;
     font-size: 14px;
     text-align: center;
