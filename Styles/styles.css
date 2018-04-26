@@ -1011,3 +1011,56 @@ body{
         margin: 0 auto;
     }
 }
+
+
+
+@media (max-width: 1024px) {
+    .page .topBar .logo{
+        width: 7%;
+    }
+    .page .topBar .logo .logoIcon{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .page .topBar .logo .logoName{
+        display: none;
+    }
+    .page .topBar .header{
+        width: 93%;
+    }
+    .page .topBar .sideMenu{
+        width: 7%;
+    }
+    .page .topBar .sideMenu .menuTabs{
+        margin-top: 0;
+    }
+    .page .topBar .sideMenu .menuTabs .menuTab .menuTabTitle{
+        display: none;
+    }
+    .page .topBar .sideMenu .menuTabs .menuTab.Selected .menuTabIcon{
+        display: block;
+    }
+    .page .topBar .sideMenu .menuTabs .menuTab.Selected:after{
+        display: none;
+    }
+    .page .topBar .sideMenu .menuTabs .menuTab:after{
+        content: "";
+    }
+    .page .topBar .sideMenu .menuTabs .menuTab.Forms:after{
+        content: "";
+        background: none;
+        padding-top: 0;
+    }
+    .page .topBar .sideMenu .menuTabs .menuTab.Pages:after{
+        content: "";
+        background: none;
+        padding-top: 0;
+    }
+    .page .topBar .sideMenu .menuTitle{
+        display: none;
+    }
+    .page .topBar .content{
+        width: 93%;
+    }
+}
+
