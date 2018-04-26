@@ -1064,3 +1064,20 @@ body{
     }
 }
 
+
+
+
+@media (max-width: 768px) {
+    .page .topBar .logo{
+        width: 10%;
+    }
+    .page .topBar .header{
+        width: 90%;
+    }
+    .page .topBar .sideMenu{
+        display: none;
+    }
+    .page .topBar .content{
+        width: 100%;
+    }
+}
